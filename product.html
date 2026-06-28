@@ -4,16 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Product Details | Store</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="cart.html">Cart</a>
+<body class="bg-gray-50 font-sans text-gray-800">
+    
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex space-x-8">
+                    <span class="text-xl font-black text-blue-600 tracking-tighter">STORE</span>
+                    <a href="index.html" class="text-gray-900 font-semibold hover:text-blue-600 px-3 py-2 rounded-md transition-colors">Home</a>
+                </div>
+                <a href="cart.html" class="bg-gray-900 hover:bg-gray-800 text-white px-5 py-2 rounded-full font-medium transition-colors flex items-center gap-2">
+                    🛒 Cart
+                </a>
+            </div>
+        </div>
     </nav>
-    <main>
-        <div id="product-detail" class="detail-container"></div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <div id="product-detail" class="max-w-5xl mx-auto"></div>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>

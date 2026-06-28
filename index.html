@@ -4,17 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Products | Store</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="cart.html">Cart</a>
+<body class="bg-gray-50 font-sans text-gray-800">
+    
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex space-x-8">
+                    <span class="text-xl font-black text-blue-600 tracking-tighter">STORE</span>
+                    <a href="index.html" class="text-gray-900 font-semibold hover:text-blue-600 px-3 py-2 rounded-md transition-colors">Home</a>
+                </div>
+                <a href="cart.html" class="bg-gray-900 hover:bg-gray-800 text-white px-5 py-2 rounded-full font-medium transition-colors flex items-center gap-2">
+                    🛒 Cart
+                </a>
+            </div>
+        </div>
     </nav>
-    <main>
-        <h1>All Products</h1>
-        <div id="product-list" class="grid-container"></div>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+        <h1 class="text-3xl font-extrabold tracking-tight text-gray-900 mb-8">All Products</h1>
+        <div id="product-list" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6"></div>
     </main>
+
     <script src="script.js"></script>
 </body>
 </html>
